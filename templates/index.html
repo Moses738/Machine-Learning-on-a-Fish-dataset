@@ -1,0 +1,56 @@
+<html>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+<head>
+    
+<link rel="stylesheet" href="{{url_for('static',filename='f.css')}}">
+</head>
+
+<body>
+   <center>
+    <style>
+        body {
+          background-color: #DBF9FC;
+          background-image: url('{{url_for('static',filename='fishes.gif')}}');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+
+<form method="POST" action="/home">
+    <label for="species"><b>Species</b></label><br>
+    <select name="species" >
+        <option value="1">Perch</option>
+        <option value="2">Bream</option>
+        <option value="3">Roach</option>
+        <option value="4">Pike</option>
+        <option value="5">Smelt</option>
+        <option value="6">Parkki</option>
+        <option value="7">Whitefish</option>
+      </select><br>
+
+    <label for="Length1"><b>Length1</b></label><br>
+    <input type="text" name="Length1"><br>
+
+    <label for="Length2"><b>Length2</b></label><br>
+    <input type="text" name="Length2"><br>
+
+    <label for="Length3"><b>Length3</b></label><br>
+    <input type="text" name="Length3"><br>
+
+    <label for="Height"><b>Height</b></label><br>
+    <input type="text" name="Height"><br>
+
+    <label for="Width"><b>Width</b></label></label><br>
+    <input type="text" name="Width"><br><br><br>
+
+    <input type="submit" value="submit">
+    
+    
+    </form> </center> 
+</body></html>
